@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( load_video )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Load_video load_video.cpp )
+target_link_libraries( Load_video ${OpenCV_LIBS} )
